@@ -9,8 +9,7 @@ class CarMake(models.Model):
     description = models.CharField(max_length=1000)
 
     def __str__(self):
-        return "Name: " + self.name + "," + \
-               "Description: " + self.description
+        return self.name + ", " + self.description
 
 
 class CarModel(models.Model):
